@@ -3,7 +3,9 @@ server:
 
 dir:
   static: public
-
+  presenter:
+    view:
+      template: template
 uri:
   static: /static
 
