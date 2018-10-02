@@ -12,6 +12,7 @@
   "author": "LightningDAISY",
   "license": "ISC",
   "dependencies": {
+    "etag": "^1.8.1",
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "props": "^0.3.0",
