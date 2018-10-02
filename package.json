@@ -1,0 +1,20 @@
+{
+  "name": "spelunker",
+  "version": "0.0.0",
+  "description": "node webframework example (without express)",
+  "main": "app.js",
+  "keywords": [
+    "node",
+    "nodejs",
+    "web",
+    "framework"
+  ],
+  "author": "LightningDAISY",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "props": "^0.3.0",
+    "sprintf-js": "^1.1.1"
+  }
+}

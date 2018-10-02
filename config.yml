@@ -1,0 +1,9 @@
+server:
+  port: 3000
+
+dir:
+  static: public
+
+uri:
+  static: /static
+

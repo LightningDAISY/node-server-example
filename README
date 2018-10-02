@@ -1,0 +1,17 @@
+
+INSTALL
+
+  npm update
+
+MAYBE
+
+  npm audit fix
+
+RUN
+
+  node app.js
+
+ACCESS
+
+  GET http://localhost:3000/
+

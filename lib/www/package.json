@@ -1,0 +1,13 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "web framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "tesuto"
+  },
+  "author": "LightningDAISY",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
