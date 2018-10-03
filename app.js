@@ -7,25 +7,16 @@ server.on(
 	"request",
 	function(req,res)
 	{
-		if(www.static.isStaticRequest(req)) return www.static.response(req, res)
-		res.writeHead(200, {"Content-Type": "text/html"})
-		// res.end(www.config.server.port.toString())
-/*
-		www.presenter.view.template.name = "example.mustache"
-		www.presenter.view.template.stash = {
-			"value1" : "A",
-			"value2" : "B",
+		const controller = www.router.routing(req,res)
+		if(controller)
+		{
+			controller.response()
 		}
-*/
-		res.end(
-			www.presenter.view.render(
-				process.cwd() + "/" + www.config.dir.presenter.view.template + "/example.mustache",
-				{
-					"value1" : "A",
-					"value2" : "B",
-				}
-			)
-		)
+		else
+		{
+			res.writeHead(404, "not found")
+			res.end("not found")
+		}
 	}
 )
 
