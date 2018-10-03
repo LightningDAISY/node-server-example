@@ -3,6 +3,7 @@ server:
 
 dir:
   static: public
+  controller: lib/www/controller
   presenter:
     view:
       template: template
