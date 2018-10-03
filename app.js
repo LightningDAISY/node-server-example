@@ -7,7 +7,7 @@ server.on(
 	"request",
 	function(req,res)
 	{
-		if(www.isStaticRequest(req)) return www.staticRequest(req, res)
+		if(www.static.isStaticRequest(req)) return www.static.response(req, res)
 		res.writeHead(200, {"Content-Type": "text/html"})
 		// res.end(www.config.server.port.toString())
 /*
