@@ -15,3 +15,7 @@ ACCESS
 
   GET http://localhost:3000/example/param1/param2/param3
 
+TEMPLATE
+
+  INCLUDE
+    {{#include}}header{{/include}}
