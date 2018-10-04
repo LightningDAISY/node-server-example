@@ -1,0 +1,17 @@
+{{#include}}header{{/include}}
+<h1>server-status</h1>
+<h2>CPUs</h2>
+<div>{{cpus.0.model}} x {{cpus.length}}</div>
+<div>speed {{cpus.0.speed}}</div>
+<h2>platform</h2>
+<div>{{platform}} {{release}}</div>
+<h2>memory</h2>
+<div>{{freemem}}MB / {{totalmem}}MB</div>
+<h2>os uptime</h2>
+<div>{{uptime}}</div>
+<h2>pid</h2>
+<div>{{pid}}</div>
+<h2>parent pid</h2>
+<div>{{ppid}}</div>
+{{#include}}footer{{/include}}
+

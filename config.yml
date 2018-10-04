@@ -4,10 +4,16 @@ server:
 dir:
   static: public
   controller: lib/www/controller
+  log: log
   presenter:
     view:
       include: include
       template: template
+
+file:
+  log:
+    access: access.log
+    error: error.log
 
 uri:
   static: /static

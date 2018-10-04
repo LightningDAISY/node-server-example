@@ -15,6 +15,14 @@ ACCESS
 
   GET http://localhost:3000/example/param1/param2/param3
 
+LOG
+
+  console.log("LOG")
+  console.warn("WARN!")
+  console.error("ERROR!")
+
+    --> log/error.log
+
 TEMPLATE
 
   INCLUDE
