@@ -18,11 +18,3 @@ file:
 uri:
   static: /static
 
-redis:
-  -
-    hostname: localhost
-    port: 6379
-  -
-    hostname: localhost
-    port: 6380
-
