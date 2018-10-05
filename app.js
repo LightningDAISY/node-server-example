@@ -7,15 +7,24 @@ server.on(
 	"request",
 	function(req,res)
 	{
-		const controller = www.router.routing(req,res)
-		if(controller)
+		try
 		{
-			controller.response()
+			const controller = www.router.routing(req,res)
+			if(controller)
+			{
+				controller.response()
+			}
+			else
+			{
+				res.writeHead(404, "not found")
+				res.end("not found")
+			}
 		}
-		else
+		catch(error)
 		{
-			res.writeHead(404, "not found")
-			res.end("not found")
+			console.error(error)
+			res.writeHead(500, "internal server error")
+			res.end("")
 		}
 	}
 )
