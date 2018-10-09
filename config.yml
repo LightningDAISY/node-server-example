@@ -4,6 +4,7 @@ server:
 dir:
   static: public
   controller: lib/www/controller
+  save: public/static/data
   log: log
   presenter:
     view:

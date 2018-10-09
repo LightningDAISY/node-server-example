@@ -1,3 +1,4 @@
 node_modules/*
 log/*.log
+public/static/data/*.yml
 
