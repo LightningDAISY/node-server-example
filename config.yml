@@ -19,3 +19,5 @@ file:
 uri:
   static: /static
 
+default:
+  encoding: utf8

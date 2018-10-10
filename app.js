@@ -10,20 +10,24 @@ server.on(
 		try
 		{
 			const controller = www.router.routing(req,res)
+			res.statusCode = 200
 			if(controller)
 			{
 				controller.response()
+				controller.presenter.view.log.access(res.statusCode, controller.req)
 			}
 			else
 			{
-				res.writeHead(404, "not found")
+				res.statusCode = 404
+				res.writeHead(res.statusCode, "not found")
 				res.end("not found")
 			}
 		}
 		catch(error)
 		{
 			console.error(error)
-			res.writeHead(500, "internal server error")
+			res.statusCode = 500
+			res.writeHead(res.statusCode, "internal server error")
 			res.end("")
 		}
 	}
